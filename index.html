@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="home-buttons-sec">
+
+            <a id="red" href="./pages/grid.html" type="button" class="btn btn-secondary button" data-bs-toggle="tooltip"
+                data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Bmw">
+                Grid 1
+            </a>
+
+            <a id="green" href="./pages/grid2.html" type="button" class="btn btn-secondary button"
+                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                data-bs-title="Mersedes-Benz">
+                Grid 2
+            </a>
+
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    });
+</script>
+
+</html>

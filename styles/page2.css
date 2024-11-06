@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.container div a {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 40px;
+
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 50px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "blue-top purple red-top"
+        "blue-bottom purple red-bottom"
+        "orange orange red-bottom";
+
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+    margin-top: 40px;
+
+}
+
+.grid-container div {
+    border-radius: 8px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #76c7c0;
+}
+
+.blue-top {
+    grid-area: blue-top;
+    background-color: #4285f4;
+}
+
+.purple {
+    grid-area: purple;
+    background-color: #9061f4;
+}
+
+.red-top {
+    grid-area: red-top;
+    background-color: #f5624d;
+}
+
+.blue-bottom {
+    grid-area: blue-bottom;
+    background-color: #4285f4;
+}
+
+.red-bottom {
+    grid-area: red-bottom;
+    background-color: #f5624d;
+}
+
+.orange {
+    grid-area: orange;
+    background-color: #f4b161;
+}
+
+.grid-container div:nth-child(1):hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    box-shadow: #76c7c0 0 1px 30px;
+}
+
+.grid-container div:nth-child(2):hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    box-shadow: #4285f4 0 1px 30px;
+}
+
+.grid-container div:nth-child(5):hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    box-shadow: #4285f4 0 1px 30px;
+}
+
+.grid-container div:nth-child(3):hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    box-shadow: #9061f4 0 1px 30px;
+}
+
+.grid-container .red:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    box-shadow: #f5624d 0 1px 30px;
+}
+
+.grid-container .orange:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    box-shadow: #f4b161 0 1px 30px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+
+}
