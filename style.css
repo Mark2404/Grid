@@ -81,3 +81,20 @@ body {
     box-shadow: #4caf50 0 1px 30px;
     background-color: greenyellow;
 }
+
+#middle {
+    position: absolute;
+    top: 350px;
+    right: 708px;
+    background-color: black;
+    color: rgba(128, 128, 128, 0.666);
+
+}
+
+#middle:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    box-shadow: #000000 0 1px 30px;
+    background-color: black;
+    color: white;
+}
